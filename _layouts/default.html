@@ -1,10 +1,26 @@
-<!DOCTYPE HTML>
-<html>
-  <head>
-    <title>{{ page.title }}</title>
-  </head>
+<!DOCTYPE html>
+<html lang="en">
+<!-- Default layout -->
+
+  {% include head.html %}
+
   <body>
-	<p> From the content will come </p>
+
+    {% include header.html %}
+
+    <main>
+
+      <menu>
+
+      </menu>
+
+      <!-- Content -->
+      {{ content }}
+
+    </main>
+
+    {% include footer.html %}
+
   </body>
 
 </html>
