@@ -1,6 +1,6 @@
 .idea
 .DS_Store
 .DS_Store/
-_site
+_site/*
 access-error.log
 local-error.log
