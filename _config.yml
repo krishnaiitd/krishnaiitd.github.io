@@ -1,4 +1,8 @@
 # Site settings
+# Name of your site (displayed in the header)
+name: Krishna Prasad
+# URL of your avatar or profile pic (you could use your GitHub profile pic)
+avatar: https://avatars2.githubusercontent.com/u/1598810?v=3&s=40
 title: Krishna Prasad Resume | Find every thing related to Krishna Prasad, Krishna Prassad IIT Delhi
 email: kprasad.iitd@gmail.com
 description: Know about Krishna's prasad, resume of krishna prasad, details resume of Krishna Prasad
@@ -6,3 +10,4 @@ keywords: Krishna Prasad, Resume of Krishna's Prasad, CV Krishna Prasad, Krishna
 twitter_username: krishaniitd
 github_username:  krishnaiitd
 baseurl: "http://krishnaiitd.github.io"
+#url:
