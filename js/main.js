@@ -10,11 +10,8 @@ $(function() {
 	});
 
 	var cookie = getCookie('closed');
-	console.log(cookie);
 	if (cookie === "" || cookie === null || cookie === undefined) {
-		setInterval(function(){
-			$("#develop-info").modal('show');
-		}, 8000);
+		$("#develop-info").modal('show');
 	}
 
 	function getCookie(cname) {
