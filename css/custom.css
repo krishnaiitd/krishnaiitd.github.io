@@ -1,0 +1,21 @@
+body { padding-top: 37px; font-size: large;}
+
+h1 {
+	font-family: medium-content-sans-serif-font,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 36px;
+	margin-left: -2.25px;
+	line-height: 1.00;
+	letter-spacing: -.02em;
+}
+
+h2 {
+	font-family: medium-content-sans-serif-font,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 30px;
+	margin-left: 20px;
+	line-height: 0.15;
+	letter-spacing: -.02em;
+}
