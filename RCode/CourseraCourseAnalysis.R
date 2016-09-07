@@ -32,7 +32,7 @@ marks <- c(100.0,
            75.3,
            93.1,
            97.0,
-           NA,
+           94.3,
            NA,
            98.5,
            98.2,
@@ -49,7 +49,7 @@ completedOn <- c("June-2016",
                  "January-2016",
                  "April-2016",
                  "Jul-2016",
-                 NA,
+                 "Sept-2016",
                  NA,
                  "November-2015",
                  "December-2015",
@@ -73,7 +73,6 @@ g <- g + theme(axis.text.x=element_text(angle = 60, hjust = 1))
 plot(g)
 
 
-
 reorder <- c("July-2016", "June-2016", "April-2016", "January-2016", "December-2015", "November-2015", "August-2015")
 coursesdf$completedOn <- factor(coursesdf$completedOn, levels = reorder)
 
@@ -82,3 +81,12 @@ g <- g + geom_bar(stat="identity")
 g <- g + ggtitle("Comppleted courses with obtained marks") + xlab("Months") + ylab("Marks obtained")
 g <- g + theme(axis.text.x=element_text(angle = 70, hjust = 1))
 plot(g)
+
+require(rCharts)
+df <- data.frame(courses, marks, completedOn, types, sub_types, organizations)
+
+r2 <- rPlot(marks ~ courses, color = 'sub_types', data = df, type = 'bar')
+r2$set(theme(axis.text.x=element_text(angle = 70, hjust = 1)))
+r2$save('fig/r1.html', cdn = FALSE)
+cat('<iframe src="fig/r1.html" width=100%, height=600>/<iframe>')
+
